@@ -1,13 +1,24 @@
 * {
+    font-family: 'Open Sans', sans-serif;
     color: white;
 }
+
 .background {
     background-color: #3c3c3c;
+    }
+
+ nav {
+    font-weight: 300; 
 }
+
 h2 {
     color: white;
     padding-top: 4%;
     padding-bottom: 4%;
+}
+
+p {
+    font-weight: 300;
 }
 
 .card-img-top {
@@ -24,4 +35,28 @@ h2 {
     height: 150px;
 }
 
+footer {
+    margin-top: 5%;
+}
 
+footer h3, .icons {
+    font-weight: 300;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+@media (max-width: 575.98px) {
+    .quienes-somos {
+        display: none;
+    }
+    .navbar-brand {
+        display: none;
+    }
+    .viajes-chile {
+        display: none;
+    }
+    .padding-10 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
