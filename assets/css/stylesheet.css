@@ -20,6 +20,11 @@
     font-weight: 300; 
 }
 
+/* Carousel*/
+.carousel-inner {
+    height: 60em;
+}
+
 /* Inf*/
 h2 {
     color: white;
