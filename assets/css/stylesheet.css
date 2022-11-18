@@ -1,16 +1,26 @@
 * {
     font-family: 'Open Sans', sans-serif;
     color: white;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
 }
 
+/* General*/
+.padding-10 {
+    padding-left: 10%;
+    padding-right: 10%;
+}
 .background {
-    background-color: #3c3c3c;
+    background-color: #3c3c3c;    
     }
 
+/* Nav*/
  nav {
     font-weight: 300; 
 }
 
+/* Inf*/
 h2 {
     color: white;
     padding-top: 4%;
@@ -21,20 +31,18 @@ p {
     font-weight: 300;
 }
 
+/* Cards */
 .card-img-top {
     width: cover;
     height: 12em;
 }
 
-.padding-10 {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
+/* Form */
 .mensaje {
     height: 150px;
 }
 
+/* footer */
 footer {
     margin-top: 5%;
 }
@@ -43,16 +51,18 @@ footer h3, .icons {
     font-weight: 300;
     padding-top: 1%;
     padding-bottom: 1%;
+    margin: 0%;
 }
 
+/* Media Queries */
 @media (max-width: 575.98px) {
     .quienes-somos {
         display: none;
     }
     .navbar-brand {
-        display: none;
+        margin-right: 30%;
     }
-    .viajes-chile {
+    .text-footer {
         display: none;
     }
     .padding-10 {
@@ -60,3 +70,7 @@ footer h3, .icons {
         padding-right: 5%;
     }
 }
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+  }
