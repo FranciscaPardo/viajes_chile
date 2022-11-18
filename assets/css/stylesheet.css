@@ -1,17 +1,27 @@
-
-
-
-h2 {
-    background-color: black;
+* {
     color: white;
+}
+.background {
+    background-color: #3c3c3c;
+}
+h2 {
+    color: white;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 
 .card-img-top {
     width: cover;
-    height: 15em;
+    height: 12em;
 }
 
+.padding-10 {
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
-
+.mensaje {
+    height: 150px;
+}
 
 
