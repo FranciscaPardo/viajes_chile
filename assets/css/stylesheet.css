@@ -20,9 +20,6 @@
     font-weight: 300; 
 }
 
-/* Carousel*/
-
-
 /* Inf*/
 h2 {
     color: white;
@@ -62,6 +59,7 @@ footer h3, .icons {
     .quienes-somos {
         display: none;
     }
+
     .navbar-brand {
         margin-right: 30%;
     }
