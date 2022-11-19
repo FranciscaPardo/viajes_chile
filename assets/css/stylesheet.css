@@ -54,6 +54,11 @@ footer h3, .icons {
     margin: 0%;
 }
 
+/* Modal */
+    .modal-title, .modal-body {
+    color: black;
+}
+
 /* Media Queries */
 @media (max-width: 575.98px) {
     .quienes-somos {

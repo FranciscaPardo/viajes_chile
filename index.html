@@ -17,10 +17,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0" >
   <div class="background">
+
+<!-- Modal -->
+    <div class="modal" tabindex="-1" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Bienvenido/a</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="modal-body">Haz scroll o usa la barra de navegación para desplazarte por la página</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
  <!-- NavBar -->
-  <nav class="navbar navbar-expand-lg bg-clear navbar-dark fixed-top px-5">
+  <nav class="navbar navbar-expand-lg bg-clear navbar-dark fixed-top px-5" id="navbar">
     <div class="container-fluid">
       <img src="assets\img\viajes.svg" alt="Bootstrap" width="30" height="24">
       <a class="navbar-brand" href="#">Viajes Chile</a>     
@@ -28,18 +47,18 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto nav nav-pills">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link" href="#scrollspy1">Inicio</a>
           </li>
           <li class="nav-item quienes-somos">
-            <a class="nav-link" href="#">Quienes Somos</a>
+            <a class="nav-link" href="#scrollspy2">Quienes Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Destacados</a>
+            <a class="nav-link" href="#scrollspy3">Destacados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#scrollspy4">Contacto</a>
           </li>
         </ul>
       </div>
@@ -48,11 +67,11 @@
 
   <!-- Carousel -->
   <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-inner">
+    <div class="carousel-inner" id="scrollspy1">
       <div class="carousel-item active">
         <img src="assets\img\carousel1.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" id="inicio">
         <img src="assets\img\carousel2.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
@@ -70,7 +89,7 @@
   </div>
   <!-- Inf -->
   <div class="padding-10">
-  <div class="inf quienes-somos">
+  <div class="inf quienes-somos" id="scrollspy2">
     <h2 class="text-center">¿Quiénes Somos?</h2>
   <div class="row row-cols-1 row-cols-md-3 g-4" class="padding-10">
     <div class="col">
@@ -107,7 +126,7 @@
 
    <!-- Destacado -->
    <div class="inf">
-    <h2 class="text-center">Destacados</h2>
+    <h2 class="text-center" id="scrollspy3">Destacados</h2>
       </div>
 
       <div class="row row-cols-1 row-cols-md-4 g-4">
@@ -154,7 +173,7 @@
     <h2 class="text-center">Contacto</h2>
       </div>
 
-      <form class="padding-10">
+      <form class="padding-10" id="scrollspy4">
         <div class="mb-3">
           <div class="form-group mb-4">
             <label class="mb-2">Nombre</label> 
